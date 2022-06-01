@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/slick.css"/>
+    <title>Taguá Kids - Berçário e Creche</title>
+</head>
+<body>
+    <header class="menu-principal">
+        <main >
+            <div class="header-1">
+                <div class="logo">
+                    <img src="./img/LOGO01.png">
+                </div>
+                <div class="redes-sociais">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="./img/telefonelogo.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./img/whatsapplogo.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./img/instagramlogo.png">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </header>
+    <main class="col-100 menu-urls">
+        <div class="header-2">
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="">INÍCIO</a>
+                    </li>
+                    <li>
+                        <a href="">SOBRE NÓS</a>
+                    </li>
+                    <li>
+                         <a href="">SERVIÇOS</a>
+                    </li>
+                    <li>
+                        <a href="">FORMULÁRIO</a>
+                    </li>
+                    <li>
+                        <a href="">CONTATO</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="busca">
+                <input placeholder="Busca" type="text" />
+            </div>
+        </div>
+    </main>
+    <div class="col-100">
+        <div class="slider-principal">
+            <img src="./img/minimundo.png"/>
+            <img src="./img/panorama.png"/>
+            <img src="./img/parque.png"/>
+            <img src="./img/vistasuperior.png"/>
+        </div>
+    </div>
+    <div class="col-100">
+        <div class="content texto-serviço">
+            <h1>Nossos diferenciais são:</h1>
+            <h2>Períodos: Integral, Parcial e Especial</h2>
+            <h3>Circuito de Câmeras</h3>
+            <h3>Orientadora Educacional</h3>
+            <h3>Psicopedagoga</h3>
+            <h3>Teatro</h3>
+            <h3>Pedagoga</h3>
+            <h3>Estimulação à Leitura</h3>
+            <h3>Arteterapia</h3>
+            <h3>Orientação Odontológica</h3>
+            <h3>Pintura e Desenho Infantil</h3>
+            <h3>Educação Ambiental: Horta e Viveiro</h3>
+            <h3>Pista de Triciclo</h3>
+            <h3>Orientação Nutricional</h3>
+            <h3>Tanque de Areia</h3>
+            <h3>Musicalização</h3>
+            <h3>Chuveirão</h3>
+            <h3>Playground</h3>
+            <h3>Psicomotricidade</h3>
+            <h3>Atenção Especial Durante o Período de Adaptação</h3>
+            <h2>Idade: 04 meses até 04 anos</h2>
+        </div>
+    </div>
+    <div class="col-100">
+        <div class="content texto-horariodefuncionamento">
+            <h1>Horário de funcionamento:</h1>
+            <h2>Integral (12 horas) - 7h às 19h - (Lanche da Manhã, Almoço, Lanche da Tarde, Janta + 2 banhos</h2>
+            <h2>Especial (09 horas) - A Combinar - (Lanche da Manhã, Almoço, Lanche da Tarde, Janta + 1 banho</h2>
+            <h2>Parcial (06 horas) - 7h às 13h ou 13h às 19h - (Lanche da Manhã + Almoço + 1 Banho OU Lanche da Tarde + Janta + 1 banho</h2>
+        </div>
+    <div class="col-100">
+        <div class="content texto-destaque">
+            <h1><strong>Não perca tempo, matricule já seus filhos!</strong></h1>
+            <p>Seu filho inventará desculpas para não voltar pra casa.</p>
+            <p>Aqui ele é feliz!</p>
+        </div>
+    </div>
+    <div class="content texto-formulario">
+        <h1>Formulário:</h1>
+    </div>
+    <div class="col-100">
+        <div class="content formulario">
+            <form action="/pagina-dados-do-form" method="post">
+                <div>
+                    <label for="newsletter">Deseja receber nossas novidades sobre valores e outras informações?</label>
+                    <form>
+                        <input type="RADIO" name="OPCAO" value="op1"checked> Sim
+                        <input type="RADIO" name="OPCAO" value="op2"> Não
+                    </form>
+                </div>
+            <p>Preencha o formulário abaixo que entraremos em contato o mais breve possível:</p>
+            <div>
+                <label for="nome">Seu Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome*" required>
+            </div>
+            <div>
+                <label for="telefone">Seu Telefone:</label>
+                <input type="text" name="telefone" id="telefone" placeholder="Digite seu Telefone">
+            </div>
+            <div>
+                <label for="email">Seu E-Mail:</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu E-Mail*" required>
+            </div>
+            <div class="content estado">
+                
+                <form>
+                    Estado:<br>
+                    <select id="estado" onchange="gerarCidades();">
+                        <option></option>
+                        <option>DF</option>
+                    </select>
+                    <br>
+                    Região Administrativa:<br>
+                    <select id="cidade">
+                    </select>
+                </form>
+            </div>
+            <div>
+                <label for="msg">Suas Dúvidas:</label>
+                <textarea id="msg" name="msg" placeholder="Escreva aqui as dúvidas que você tem*" required></textarea>
+            </div>
+        <br>
+        </form>
+        <button type="submit">Enviar</button>
+        </div>
+    </div>
+    <div class="col-100">
+        <div class="content texto-telefoneeendereco">
+            <h1>Telefone para contato:</h1>
+            <h2>(61) 3048-3553</h2>
+            <h1>Endereço:</h1>
+            <h2>QND 49 Lote 31 - Taguatinga Norte</h2>
+        </div>
+    </div>
+        <div class="col-100">
+            <div class="content texto-equipe">
+                <h1>Equipe do projeto:</h1>
+                <h2>Gabriel Souza Lucindo</h2>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/jquery-migrate.js"></script>
+    <script type="text/javascript" src="./js/slick.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript">
+        function gerarCidades() {
+            var estado= document.getElementById("estado").value;
+            var cidade= document.getElementById("cidade");
+            var option= "";
+            if (estado== "") {
+                limpaCombo();
+            }
+            if (estado== "DF") {
+                limpaCombo();
+                option= document.createElement("option");
+                option.value= "1";
+                option.text= "Águas Claras - RA XX";
+                cidade.add(option);
+                option= document.createElement("option");
+                option.value= "2";
+                option.text= "Arniqueira - RA XXXIII";
+                cidade.add(option);
+                option= document.createElement("option");
+                option.value= "3";
+                option.text= "Brazlândia - RA IV";
+                cidade.add(option);
+                option= document.createElement("option");
+                option.value= "4";
+                option.text= "Candangolândia - RA XIX";
+                cidade.add(option);
+                option= document.createElement("option");
+                option.value= "5";
+                option.text= "Ceilândia - RA IX";
+                cidade.add(option);
+                option= document.createElement("option");
+                option.value= "6";
+                option.text= "Cruzeiro - RA XI";
+                cidade.add(option);
+                option= document.createElement("option");
+                option.value= "7";
+                option.text= "Fercal - RA XXXI";
+                cidade.add(option);
+                option= document.createElement("option");
+                option.value= "8";
+                option.text= "Gama - RA II";
+                cidade.add(option);
+                option= document.createElement("option");
+                option.value= "9";
+                option.text= "Guará - RA X";
+                cidade.add(option);
+                option= document.createElement("option");
+                option.value= "10";
+                option.text= "Itapoã - RA XXVIII";
+                cidade.add(option);
+                option= document.createElement("option");
+                option.value= "11";
+                option.text= "Jardim Botânico - RA XXVII";
+                cidade.add(option);
+                option= document.createElement("option");
+                option.value= "12";
+                option.text= "Lago Norte - RA XVIII";
+                cidade.add(option);
+                option= document.createElement("option");
+                option.value= "13";
+                option.text= "Lago Sul - RA XVI";
+                cidade.add(option);
+                option= document.createElement("option");
+                option.value= "14";
+                option.text= "Núcleo Bandeirante - RA VIII";
+                cidade.add(option);
+                option= document.createElement("option");
+                option.value= "15";
+                option.text= "Paranoá - RA VII";
+                cidade.add(option);
+                option= document.createElement("option");
+                option.value= "16";
+                option.text= "Park Way - RA XXIV";
+                cidade.add(option);
+                option= document.createElement("option");
+                option.value= "17";
+                option.text= "Planaltina - RA VI";
+                cidade.add(option);
+                option= document.createElement("option");
+                option.value= "18";
+                option.text= "Plano Piloto - RA I";
+                cidade.add(option);
+                option= document.createElement("option");
+                option.value= "19";
+                option.text= "Recanto das Emas - RA XV";
+                cidade.add(option);
+                option= document.createElement("option");
+                option.value= "20";
+                option.text= "Riacho Fundo - RA XVII";
+                cidade.add(option);
+                option= document.createElement("option");
+                option.value= "21";
+                option.text= "Riacho Fundo II - RA XXI";
+                cidade.add(option);
+                option= document.createElement("option");
+                option.value= "22";
+                option.text= "Samambaia - RA XII";
+                cidade.add(option);
+                option= document.createElement("option");
+                option.value= "23";
+                option.text= "Santa Maria - RA XIII";
+                cidade.add(option);
+                option= document.createElement("option");
+                option.value= "24";
+                option.text= "São Sebastião - RA XIV";
+                cidade.add(option);
+                option= document.createElement("option");
+                option.value= "25";
+                option.text= "SCIA/Estrutural - RA XXV";
+                cidade.add(option);
+                option= document.createElement("option");
+                option.value= "26";
+                option.text= "SIA - RA XXIX";
+                cidade.add(option);
+                option= document.createElement("option");
+                option.value= "27";
+                option.text= "Sobradinho - RA V";
+                cidade.add(option);
+                option= document.createElement("option");
+                option.value= "28";
+                option.text= "Sobradinho II - RA XXVI";
+                cidade.add(option);
+                option= document.createElement("option");
+                option.value= "29";
+                option.text= "Sol Nascente e Pôr do Sol - RA XXXII";
+                cidade.add(option);
+                option= document.createElement("option");
+                option.value= "30";
+                option.text= "Sudoeste/Octogonal - RA XXII";
+                cidade.add(option);
+                option= document.createElement("option");
+                option.value= "31";
+                option.text= "Taguatinga - RA III";
+                cidade.add(option);
+                option= document.createElement("option");
+                option.value= "32";
+                option.text= "Varjão - RA XXIII";
+                cidade.add(option);
+                option= document.createElement("option");
+                option.value= "33";
+                option.text= "Vicente Pires - RA XXX";
+                cidade.add(option);
+            }
+        }
+        function limpaCombo() {
+            var comboCidades= document.getElementById("cidade");
+            while (comboCidades.length) {
+                comboCidades.remove(0);
+            }
+        }
+    </script>
+</body>
+</html>
